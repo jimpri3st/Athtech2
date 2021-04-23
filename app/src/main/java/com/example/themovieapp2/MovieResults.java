@@ -48,8 +48,7 @@ public class MovieResults {
     {
 
 
-        private String posterPath;
-
+        private String poster_path;
         private Boolean adult;
         private String overview;
         private String releaseDate;
@@ -62,14 +61,15 @@ public class MovieResults {
         private Double popularity;
         private Integer voteCount;
         private Boolean video;
-        private Double voteAverage;
+        private double vote_average;
+
 
         public String getPosterPath() {
-            return posterPath;
+            return poster_path;
         }
 
-        public void setPosterPath(String posterPath) {
-            this.posterPath = posterPath;
+        public void setPosterPath(String poster_path) {
+            this.poster_path = poster_path;
         }
 
         public Boolean getAdult() {
@@ -168,12 +168,12 @@ public class MovieResults {
             this.video = video;
         }
 
-        public Double getVoteAverage() {
-            return voteAverage;
+        public double getVoteAverage() {
+            return vote_average;
         }
 
-        public void setVoteAverage(Double voteAverage) {
-            this.voteAverage = voteAverage;
+        public void setVoteAverage(double voteAverage) {
+            this.vote_average = vote_average;
         }
     }
 }

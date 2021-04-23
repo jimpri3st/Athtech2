@@ -45,7 +45,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
             holder.title.setText(mData.get(position).getTitle());
             holder.overview.setText(mData.get(position).getOverview());
-            holder.rating.setText(String.valueOf(mData.get(position).getVoteAverage()));
+            holder.rating.setText(String.valueOf((long)(mData.get(position).getVoteAverage())));
             Glide.with(mContext)
                     .load("https://image.tmdb.org/t/p/original"+(mData.get(position).getPosterPath()))
                     .into(holder.img);
